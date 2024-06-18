@@ -1,6 +1,7 @@
 package com.example.SpringSecurityProject.controller;
 
 import com.example.SpringSecurityProject.domain.AuthenticationRequest;
+import com.example.SpringSecurityProject.domain.AuthenticationResponse;
 import com.example.SpringSecurityProject.service.MyUserDetailsService;
 import com.example.SpringSecurityProject.util.JwtUtil;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -28,7 +29,7 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public String createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest) throws Exception {
+    public AuthenticationResponse  createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest) throws Exception {
         // Authenticate the user
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(authenticationRequest.getUsername(), authenticationRequest.getPassword()));
@@ -37,7 +38,7 @@ public class UserController {
         // Generate JWT token
         final String jwt = jwtUtil.generateToken(userDetails.getUsername());
         System.out.println("Generated JWT Token: " + jwt);
-        return jwt;
+        return new AuthenticationResponse(jwt);
     }
 
     @GetMapping("/secure")
