@@ -4,11 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa7b5d92-8de7-4ecd-beda-880244e36762" name="Changes" comment="" />
+    <list default="true" id="fa7b5d92-8de7-4ecd-beda-880244e36762" name="Changes" comment="Initialize project.">
+      <change afterPath="$PROJECT_DIR$/SpringSecurityProject/src/main/java/com/example/SpringSecurityProject/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSecurityProject/src/main/java/com/example/SpringSecurityProject/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSecurityProject/src/main/java/com/example/SpringSecurityProject/domain/AuthenticationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSecurityProject/src/main/java/com/example/SpringSecurityProject/filter/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSecurityProject/src/main/java/com/example/SpringSecurityProject/model/MyUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSecurityProject/src/main/java/com/example/SpringSecurityProject/service/MyUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSecurityProject/src/main/java/com/example/SpringSecurityProject/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSecurityProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurityProject/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSecurityProject/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurityProject/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/SpringSecurityProject/src/main/java/com/example/SpringSecurityProject/SpringSecurityProjectApplication.java" root0="FORCE_HIGHLIGHTING" />
@@ -16,6 +30,7 @@
     <setting file="file://$PROJECT_DIR$/SpringSecurityProject/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2i1uG8S0zFOyAWnSN9LQLFU8OY8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,7 +38,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SpringSecurityProject/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23794712" />
@@ -52,7 +67,31 @@
       <option name="presentableId" value="Default" />
       <updated>1718670308191</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initialize project.">
+      <created>1718675600451</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718675600451</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initialize project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initialize project." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SpringSecurityProject$SpringSecurityProjectApplication.ic" NAME="SpringSecurityProjectApplication Coverage Results" MODIFIED="1718673030114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
