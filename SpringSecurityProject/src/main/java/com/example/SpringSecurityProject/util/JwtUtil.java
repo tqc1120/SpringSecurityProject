@@ -57,7 +57,6 @@ public class JwtUtil {
                 .setSubject(username)
                 .setIssuedAt(new Date(System.currentTimeMillis()))
                 .setExpiration(new Date(System.currentTimeMillis() + jwtExpirationInMs))
-//                .signWith(SignatureAlgorithm.HS256, secretKey)
                 .signWith(key, SignatureAlgorithm.HS256)
                 .compact();
     }
@@ -67,4 +66,3 @@ public class JwtUtil {
         return (extractedUsername.equals(username) && !isTokenExpired(token));
     }
 }
-

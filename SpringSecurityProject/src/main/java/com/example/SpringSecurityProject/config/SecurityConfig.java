@@ -2,7 +2,6 @@ package com.example.SpringSecurityProject.config;
 
 import com.example.SpringSecurityProject.filter.JwtRequestFilter;
 import com.example.SpringSecurityProject.service.MyUserDetailsService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
