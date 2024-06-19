@@ -1,11 +1,15 @@
 package com.example.SpringSecurityProject.util;
 
 import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwtParser;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.security.Keys;
+import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import java.security.Key;
 import java.util.Date;
 import java.util.function.Function;
 
@@ -17,6 +21,14 @@ public class JwtUtil {
 
     @Value("${jwt.expiration}")
     private long jwtExpirationInMs;
+
+    private JwtParser jwtParser;
+
+    @PostConstruct
+    public void init() {
+        Key key = Keys.hmacShaKeyFor(secretKey.getBytes());
+        jwtParser = Jwts.parserBuilder().setSigningKey(key).build();
+    }
 
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
@@ -32,7 +44,7 @@ public class JwtUtil {
     }
 
     private Claims extractAllClaims(String token) {
-        return Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token).getBody();
+        return jwtParser.parseClaimsJws(token).getBody();
     }
 
     private Boolean isTokenExpired(String token) {
@@ -40,11 +52,13 @@ public class JwtUtil {
     }
 
     public String generateToken(String username) {
+        Key key = Keys.hmacShaKeyFor(secretKey.getBytes());
         return Jwts.builder()
                 .setSubject(username)
                 .setIssuedAt(new Date(System.currentTimeMillis()))
                 .setExpiration(new Date(System.currentTimeMillis() + jwtExpirationInMs))
-                .signWith(SignatureAlgorithm.HS256, secretKey)
+//                .signWith(SignatureAlgorithm.HS256, secretKey)
+                .signWith(key, SignatureAlgorithm.HS256)
                 .compact();
     }
 
