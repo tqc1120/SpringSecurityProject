@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa7b5d92-8de7-4ecd-beda-880244e36762" name="Changes" comment="Initialize project.">
-      <change afterPath="$PROJECT_DIR$/SpringSecurityProject/src/main/java/com/example/SpringSecurityProject/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringSecurityProject/src/main/java/com/example/SpringSecurityProject/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringSecurityProject/src/main/java/com/example/SpringSecurityProject/domain/AuthenticationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringSecurityProject/src/main/java/com/example/SpringSecurityProject/filter/JwtRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringSecurityProject/src/main/java/com/example/SpringSecurityProject/model/MyUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringSecurityProject/src/main/java/com/example/SpringSecurityProject/service/MyUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringSecurityProject/src/main/java/com/example/SpringSecurityProject/util/JwtUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringSecurityProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurityProject/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringSecurityProject/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurityProject/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +42,8 @@
   </component>
   <component name="RunManager">
     <configuration name="SpringSecurityProjectApplication" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.example.SpringSecurityProject.SpringSecurityProjectApplication" />
       <module name="SpringSecurityProject" />
       <method v="2">

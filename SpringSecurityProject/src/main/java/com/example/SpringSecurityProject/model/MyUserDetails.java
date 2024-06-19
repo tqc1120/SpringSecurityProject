@@ -15,6 +15,8 @@ public class MyUserDetails implements UserDetails {
     private String password;
     private String role;
 
+
+    // return authority to user
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return Collections.singleton(new SimpleGrantedAuthority(role));
